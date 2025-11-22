@@ -1,0 +1,280 @@
+/* Overall Page Background */
+body {
+    background-color: #fff; /* Poora page ka background white */
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #ff69b4;  /* Pink background */
+    padding: 15px 0;
+}
+
+.navbar .logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #fff;                /* Logo text white */
+}
+
+.navbar .nav-links li a {
+    color: #fff;                /* Navbar links white */
+    text-decoration: none;
+    padding: 8px 15px;
+    transition: 0.3s;
+}
+
+.navbar .nav-links li a:hover,
+.navbar .nav-links li a.active {
+    color: #000;                /* Hover or active link black */
+}
+
+/* Footer */
+.footer {
+    background-color: #ff69b4;  /* Pink background */
+    color: #fff;                /* Footer text white */
+    padding: 40px 20px;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #000;               /* Link hover black */
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ff4081; /* night shade */
+    padding: 15px 50px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar .logo {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* Hero Section */
+.contact-hero {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+              url('contact-banner.webp') center/cover no-repeat;
+  color: #fff;
+  text-align: center;
+  padding: 120px 20px;
+}
+
+.contact-hero h1 {
+  font-size: 48px;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
+
+.contact-hero p {
+  font-size: 18px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Contact Section */
+.contact-section {
+  background-color: #fff;
+  padding: 80px 10%;
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+/* Contact Info */
+.contact-info {
+  flex: 1 1 40%;
+  background: #d8bfd8;
+  color: #000;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+.contact-info h2 {
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.contact-info p {
+  font-size: 16px;
+  margin: 10px 0;
+  line-height: 1.6;
+}
+
+/* Contact Form */
+.contact-form {
+    width: 90%;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #fff;       /* Background white */
+    border: 3px solid #ff69b4;    /* All around pink border */
+    border-radius: 10px;          /* Rounded corners */
+    text-align: center;
+}
+
+.contact-form h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+.contact-form textarea {
+    height: 150px;
+    resize: none;
+}
+
+.contact-form button {
+    background-color: #000;       /* Black button */
+    color: #fff;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #333;       /* Darker on hover */
+}
+.contact-bottom {
+    background-color: #fdf0f5; /* soft pink background */
+    padding: 40px 20px 20px 20px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact-bottom-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px;
+    margin-bottom: 20px;
+}
+
+.contact-bottom h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.contact-bottom p {
+    margin: 5px 0;
+}
+
+.social-media a img {
+    width: 35px;
+    margin: 0 10px;
+    transition: transform 0.3s;
+}
+
+.social-media a img:hover {
+    transform: scale(1.2);
+}
+
+.footer-note {
+    font-size: 14px;
+    color: #555;
+    margin-top: 20px;
+}
+
+
+
+
+/* Footer */
+
+    .footer {
+    background-color: #ff4081; /* dark pink */
+    color: white;              /* default text white */
+    padding: 50px 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.footer-section {
+    flex: 1 1 200px;
+    min-width: 200px;
+}
+
+.footer-section h3 {
+    color: black; /* heading black */
+    margin-bottom: 15px;
+}
+
+.footer-section ul {
+    list-style: disc; /* bullet points */
+    padding-left: 20px;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+    color: white; /* list text white */
+}
+
+.footer-section ul li::marker {
+    color: black; /* bullet/dot black */
+}
+
+.footer-section a {
+    color: white; /* links white */
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 40px;
+    border-top: 1px solid black;
+    padding-top: 20px;
+    color: white;
+}
+

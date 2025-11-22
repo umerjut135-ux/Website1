@@ -1,0 +1,280 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ff4081; /* night shade */
+    padding: 15px 50px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar .logo {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('phtoes2/pik\ 12.jpg') center/cover no-repeat;
+    height: 100vh; /* height big kar di full screen ke liye */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.hero-content button {
+    padding: 12px 30px;
+    background-color: #ff4081; /* changed to pink */
+    color: black;            /* changed text to black */
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.hero-content button:hover {
+    background-color: #ff66b2; /* slightly darker/lighter pink for hover */
+}
+
+.gallery {
+    background-color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.gallery h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 items per row */
+    gap: 30px;
+    justify-items: center;
+}
+
+.gallery-item {
+    text-align: center;
+}
+
+.gallery-item img {
+    width: 100%;
+    max-width: 300px;  /* Equal size for all images */
+    height: 200px;     /* Same height */
+    object-fit: cover; /* ensures image fills the space */
+    border: 3px solid #ff4081;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.gallery-item p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #000;
+}
+
+.book-btn {
+    padding: 8px 15px;
+    background-color: #ff4081;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.book-btn:hover {
+    background-color: #ff4081;
+}
+
+
+/* Common Section Styling */
+.services, .packages, .footer {
+    background-color: #ff4081; /* white background */
+    text-align: center;      /* center all content */
+    padding: 60px 20px;      /* top & bottom padding for spacing */
+    margin: 40px 0;          /* space between sections */
+    box-sizing: border-box;
+}
+
+
+
+
+.services {
+    background-color: #ff4081; /* dark pink background for section */
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.services h2 {
+    color: rgb(20, 20, 20); /* section heading */
+    margin-bottom: 30px;
+    font-size: 32px;
+}
+
+.service-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* space between cards */
+}
+
+.service-cards .card {
+    background-color:white ; /* card background color */
+    color: #161616;             /* card text color */
+    padding: 25px 40px;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Hover effect for cards */
+.service-cards .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Packages Section */
+.packages {
+    color: white; /* default text in section is white */
+    text-align: center;
+    padding: 60px 20px;
+    background-color: white; /* section background white */
+}
+
+/* Section Heading */
+.packages h2 {
+    color: black; /* "Wedding Packages" heading in black */
+    margin-bottom: 40px;
+}
+
+/* Package Cards */
+.package-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.package-cards .package {
+    background-color: #ff4081; /* card background */
+    color: white; /* other text white */
+    padding: 30px;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* ✅ Only headings inside packages black */
+.package-cards .package h3 {
+    color: black;
+}
+
+/* Buttons inside package cards */
+.package-cards .package button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #fff; /* white button background */
+    color: black; /* black button text */
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+
+/* ----------------- Footer ----------------- */
+.footer {
+    background-color: #ff4081; /* dark pink */
+    color: white;              /* default text white */
+    padding: 50px 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.footer-section {
+    flex: 1 1 200px;
+    min-width: 200px;
+}
+
+.footer-section h3 {
+    color: black; /* heading black */
+    margin-bottom: 15px;
+}
+
+.footer-section ul {
+    list-style: disc; /* bullet points */
+    padding-left: 20px;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+    color: white; /* list text white */
+}
+
+.footer-section ul li::marker {
+    color: black; /* bullet/dot black */
+}
+
+.footer-section a {
+    color: white; /* links white */
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 40px;
+    border-top: 1px solid black;
+    padding-top: 20px;
+    color: white;
+}

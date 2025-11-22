@@ -1,0 +1,243 @@
+/* Global Styling */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+    color: #fff;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #ff4081;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar .nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+.navbar .nav-links li a.active {
+    color: #fff;
+}
+
+
+/* ⭐ HERO SECTION ⭐ */
+.hero {
+    height: 100vh; /* height barha di */
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+                url('phtoes2/pik\ 14.jpg') center/cover no-repeat;
+    background-size: 100%;  /* image k size ko big kar diya */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 18px;
+}
+
+
+/* ⭐ PACKAGES SECTION ⭐ */
+.packages {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.packages h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #000;
+}
+
+.package-container {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.package-card {
+    width: 300px;
+    background: #ff4081;
+    border: 2px solid black;   /* Black border */
+    padding: 20px;
+    border-radius: 15px;
+    transition: 0.3s;
+    color: black; /* Text black */
+}
+
+/* Heading Black */
+.package-card h3 {
+    font-size: 24px;
+    color: black; 
+}
+
+/* List Bullets Black */
+.package-card ul {
+    padding-left: 20px;
+}
+
+.package-card ul li {
+    margin: 8px 0;
+    color: black;
+}
+
+/* Paragraph Text Black */
+.package-card p {
+    color: black;
+}
+
+/* Book Now Button Black Background + White Text */
+.package-card button {
+    margin-top: 15px;
+    padding: 10px 25px;
+    background: black;     /* Button background black */
+    color: white;          /* Text white */
+    border: 2px solid black;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.package-card button:hover {
+    background: white;
+    color: black;
+    border-color: black;
+}
+
+
+
+
+/* ⭐ NEW SECTION — WHY CHOOSE US ⭐ */
+.why-us {
+    padding: 60px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.why-us h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.why-container {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.why-box {
+    width: 300px;
+    padding: 20px;
+    border-radius: 15px;
+    border: 2px solid #ff4081;
+    background: white;
+    transition: 0.3s;
+}
+
+.why-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.why-box h3 {
+    color: #ff4081;
+    margin-bottom: 10px;
+}
+.why-us h2 {
+    color: black;
+}
+
+.why-box h3 {
+    color: black;
+}
+
+.why-box p {
+    color: black;
+}
+
+
+
+/* Footer */
+.footer {
+    background-color: #ff4081;
+    color: #fff;
+    padding: 40px 0;
+    margin-top: 60px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-section h3 {
+    margin-bottom: 15px;
+}
+.footer-section h3 {
+    color: black;
+}
+
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 8px 0;
+}
+
+.footer-section a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+
+/* ⭐ Responsive Design ⭐ */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 32px;
+    }
+
+    .package-card, .why-box {
+        width: 90%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
